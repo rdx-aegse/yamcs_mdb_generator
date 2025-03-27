@@ -267,9 +267,11 @@ class YAMCSMDBGen:
     OPCODE_TYPE = 'U32'
     PACKETID_TYPE = 'U16'
     PACKETTYPE_TYPE = 'U32'
-    #The value of the packet type for TM packets. Required to write in the mission database which packets should be captured
-    PACKETTYPE_TLM = 1
+    #The value of the packet type for PACKETIZED TM packets. Required to write in the mission database which packets should be captured
+    #Found in fprime/Fw/Com/ComPacket.h, FW_PACKET_PACKETIZED_TLM
+    PACKETTYPE_TLM = 4
     #Same for events (even if this value is not used here, this centralises changes as it is used by yamcs_link.py). TODO: turn this into a dict
+    #Found in the same place, LOG type
     PACKETTYPE_EVENT = 2
     
     #YAMCS doesn't support certain characters in parameter names etc. Use this map to make replacements in all names.
