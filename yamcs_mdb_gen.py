@@ -271,8 +271,8 @@ class YAMCSMDBGen:
     #Found in fprime/Fw/Com/ComPacket.h, FW_PACKET_PACKETIZED_TLM
     PACKETTYPE_TLM = 4
     #Same for events (even if this value is not used here, this centralises changes as it is used by yamcs_link.py). TODO: turn this into a dict
-    #Found in the same place, LOG type
-    PACKETTYPE_EVENT = 2
+    #See TextEventPacketizer/TextEventPacket.cpp
+    PACKETTYPE_EVENT = 0xFF
     
     #YAMCS doesn't support certain characters in parameter names etc. Use this map to make replacements in all names.
     #Currently cannot include [ ] { } ;
