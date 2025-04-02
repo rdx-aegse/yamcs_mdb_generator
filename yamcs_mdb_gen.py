@@ -265,7 +265,7 @@ class YAMCSMDBGen:
     #Required to describe the common part between a TM packet and an event packet since they go through the same data stream and preprocessor 
     #TODO: factorise into a dict instead
     OPCODE_TYPE = 'U32'
-    PACKETID_TYPE = 'U16'
+    PACKETID_TYPE = 'U32'
     PACKETTYPE_TYPE = 'U32'
     #The value of the packet type for PACKETIZED TM packets. Required to write in the mission database which packets should be captured
     #Found in fprime/Fw/Com/ComPacket.h, FW_PACKET_PACKETIZED_TLM
